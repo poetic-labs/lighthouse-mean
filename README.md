@@ -15,6 +15,7 @@ Until this project is published to npm, you'll need to clone the repo and manual
 ```sh
 git clone git@github.com:poetic-labs/lighthouse-mean.git
 cd lighthouse-mean
+yarn install
 yarn build
 yarn link
 ```
