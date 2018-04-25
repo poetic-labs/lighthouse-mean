@@ -1,0 +1,37 @@
+{
+  "name": "lighthouse-mean",
+  "version": "1.0.0",
+  "description": "Lighthouse wrapper that averages performance metrics for multiple samples",
+  "license": "MIT",
+  "author": "Poetic Systems",
+  "contributors": [
+    "Evan Corl <evan@poeticsystems.com>"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "lighthouse-mean": "bin/lighthouse-mean.js"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "build": "rm -rf dist; tsc",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "json2csv": "^4.1.2",
+    "lodash.times": "^4.3.2",
+    "moment": "^2.22.1",
+    "shelljs": "^0.8.1",
+    "url-parse": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/json2csv": "^4.1.0",
+    "@types/lodash.times": "^4.3.3",
+    "@types/shelljs": "^0.7.8",
+    "@types/url-parse": "^1.1.0",
+    "ts-node": "^6.0.0",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.8.0",
+    "typescript": "^2.8.3"
+  }
+}
